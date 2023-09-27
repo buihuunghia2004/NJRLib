@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:title="">
+            <menu>
+                <group>
+                    <item
+                        android:id="@+id/itemMemberMana"
+                        android:icon="@drawable/member_manage"
+                        android:title="Quản lý thành viên" />
+                    <item
+                        android:id="@+id/itemTicketMana"
+                        android:icon="@drawable/ticket"
+                        android:title="Quản lý phiếu mượn" />
+                    <item
+                        android:id="@+id/itemBookMana"
+                        android:icon="@drawable/book"
+                        android:title="Quản lý sách" />
+                    <item
+                        android:id="@+id/itemKOBMana"
+                        android:icon="@drawable/kob"
+                        android:title="Quản lý loại sách"/>
+                </group>
+            </menu>
+        </item>
+        <item android:title="Thống kê">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/itemTop10"
+                        android:icon="@drawable/top10"
+                        android:title="Top 10 sách bán nhiều nhất" />
+                    <item
+                        android:id="@+id/itemRevenue"
+                        android:icon="@drawable/revenue"
+                        android:title="Doanh thu" />
+                </group>
+            </menu>
+        </item>
+        <item android:title="Người dùng">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/itemChangePassword"
+                        android:icon="@drawable/change_password"
+                        android:title="Đổi mật khẩ" />
+                    <item
+                        android:id="@+id/itemLogout"
+                        android:icon="@drawable/logout"
+                        android:title="Thoát" />
+                </group>
+            </menu>
+        </item>
+    </group>
+
+</menu>

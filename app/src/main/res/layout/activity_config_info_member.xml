@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ConfigInfoMemberActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgAvatar"
+        android:src="@drawable/baseline_account_circle_24"
+        android:padding="10dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+    <TextView
+        android:text="Chọn ảnh đại diện"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Họ tên"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edtName"
+        android:background="@drawable/edittext_black_box"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <TextView
+        android:text="Ngày sinh"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edtDOB"
+        android:focusable="false"
+        android:background="@drawable/edittext_black_box"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <TextView
+        android:text="Số điện thoại"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edtPhoneNumbers"
+        android:background="@drawable/edittext_black_box"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <Button
+        android:id="@+id/btnNext"
+        android:text="NEXT"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#FE8800"
+        android:textSize="20dp"
+        android:drawableRight="@drawable/baseline_arrow_forward_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

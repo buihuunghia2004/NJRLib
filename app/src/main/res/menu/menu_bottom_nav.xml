@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemChooseBook"
+        android:title="Chọn sách"/>
+    <item
+        android:id="@+id/itemFavorite"
+        android:title="Yêu thích"/>
+    <item
+        android:id="@+id/itemNotification"
+        android:title="Thông báo"/>
+    <item
+        android:id="@+id/itemIndividual"
+        android:title="Cá nhân"/>
+</menu>

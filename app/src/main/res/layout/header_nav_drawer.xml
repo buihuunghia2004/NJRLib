@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- header_view.xml -->
+<LinearLayout
+    android:id="@+id/headerNav"
+    android:gravity="center"
+    android:background="@color/black"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgAvatarHeaderNav"
+        android:src="@drawable/avatar_default"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/tvNameHeaderNav"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your App Name"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+</LinearLayout>

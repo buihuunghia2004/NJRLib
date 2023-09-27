@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "572086410825",
+    "project_id": "njrlib-6529a",
+    "storage_bucket": "njrlib-6529a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572086410825:android:636fdbe74978f8ec136998",
+        "android_client_info": {
+          "package_name": "com.example.njrlib"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcy3Xpw89cq66vvNxpw19gUSLlY5-htt8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

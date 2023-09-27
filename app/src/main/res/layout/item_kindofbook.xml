@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/tvID"
+        android:text="BU"
+        android:textSize="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/tvName"
+        android:text="Business"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

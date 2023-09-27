@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imgCover"
+        android:src="@drawable/st03"
+        android:layout_width="52dp"
+        android:layout_height="81dp"/>
+    <LinearLayout
+        android:gravity="center|start"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvID"
+            android:text="CNTT01"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"/>
+        <TextView
+            android:id="@+id/tvName"
+            android:text="Conan Thám tử lừng danh"
+            android:textColor="@color/black"
+            android:gravity="top"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        <TextView
+            android:id="@+id/tvKOB"
+            android:text="Truyện tranh"
+            android:textColor="@color/black"
+            android:gravity="top"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center|end"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvRentCost"
+            android:text="5,000 đ/ngày"
+            android:textColor="#03A9F4"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+
+</LinearLayout>
