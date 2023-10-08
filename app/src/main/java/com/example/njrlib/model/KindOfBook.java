@@ -11,6 +11,12 @@ public class KindOfBook {
         Id = id;
         this.name = name;
     }
+<<<<<<< HEAD
+=======
+    public KindOfBook(String id) {
+        Id = id;
+    }
+>>>>>>> d2b3ea0 (Initial commit)
 
     public String getId() {
         return Id;

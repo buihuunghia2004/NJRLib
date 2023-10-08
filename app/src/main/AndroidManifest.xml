@@ -5,6 +5,11 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<<<<<<< HEAD
+=======
+    <uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER"
+        tools:ignore="ProtectedPermissions" />
+>>>>>>> d2b3ea0 (Initial commit)
 
     <application
         android:allowBackup="true"
@@ -17,6 +22,12 @@
         android:theme="@style/Theme.NJRLib"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
+=======
+            android:name=".activities.Member.MyOrderActivity"
+            android:exported="false" />
+        <activity
+>>>>>>> d2b3ea0 (Initial commit)
             android:name=".activities.Member.RentBookActivity"
             android:exported="false" />
         <activity
@@ -27,7 +38,16 @@
             android:exported="false" />
         <activity
             android:name=".TestActivity"
+<<<<<<< HEAD
             android:exported="true" />
+=======
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+>>>>>>> d2b3ea0 (Initial commit)
         <activity
             android:name=".activities.AdminAndLibrarianLoginActivity"
             android:exported="false" />
@@ -46,11 +66,15 @@
         <activity
             android:name=".activities.SplashScreenActivity"
             android:exported="true">
+<<<<<<< HEAD
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+=======
+
+>>>>>>> d2b3ea0 (Initial commit)
         </activity>
         <activity
             android:name=".MainActivity"

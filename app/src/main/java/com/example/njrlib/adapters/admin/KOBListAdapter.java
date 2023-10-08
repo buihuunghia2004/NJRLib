@@ -119,7 +119,10 @@ public class KOBListAdapter extends RecyclerView.Adapter<KOBListAdapter.ViewHold
                     return false;
                 }
             });
+<<<<<<< HEAD
 
+=======
+>>>>>>> d2b3ea0 (Initial commit)
         }
     }
     public ArrayList<Integer> getArrItemChoose(){

@@ -57,6 +57,10 @@ public class MemberActivity extends AppCompatActivity {
     String uid;
     Member curentMember=new Member();
     CurrentMember cMember;
+<<<<<<< HEAD
+=======
+    ValueEventListener valueEventListener;
+>>>>>>> d2b3ea0 (Initial commit)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,7 +81,11 @@ public class MemberActivity extends AppCompatActivity {
         Log.d("uid",uid);
         curentMember.setId(uid);
 
+<<<<<<< HEAD
         membersData.myRefList.child(uid).addValueEventListener(new ValueEventListener() {
+=======
+        valueEventListener=new ValueEventListener() {
+>>>>>>> d2b3ea0 (Initial commit)
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 curentMember=membersData.getMember(snapshot);
@@ -93,7 +101,12 @@ public class MemberActivity extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError error) {
 
             }
+<<<<<<< HEAD
         });
+=======
+        };
+        membersData.myRefList.child(uid).addValueEventListener(valueEventListener);
+>>>>>>> d2b3ea0 (Initial commit)
 
         //set up UI
         adapterViewpager=new AdapterViewpager(getSupportFragmentManager(),getLifecycle());
@@ -122,7 +135,10 @@ public class MemberActivity extends AppCompatActivity {
                 return true;
             }
         });
+<<<<<<< HEAD
         viewPagerAndBottomNav();
+=======
+>>>>>>> d2b3ea0 (Initial commit)
         binding.viewPagerMain.setAdapter(adapterViewpager);
         int[] arrId={
                 R.id.itemChooseBook,
@@ -159,7 +175,23 @@ public class MemberActivity extends AppCompatActivity {
             }
         });
     }
+<<<<<<< HEAD
     private void viewPagerAndBottomNav(){
 
+=======
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        membersData.myRefList.removeEventListener(valueEventListener);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (valueEventListener!=null){
+            membersData.myRefList.addValueEventListener(valueEventListener);
+        }
+>>>>>>> d2b3ea0 (Initial commit)
     }
 }

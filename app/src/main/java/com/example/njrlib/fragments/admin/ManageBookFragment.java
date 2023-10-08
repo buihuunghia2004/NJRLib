@@ -222,11 +222,14 @@ public class ManageBookFragment extends Fragment {
     private void setImageAvatar(Uri uri){
         dialogBinding.imgCover.setImageURI(uri);
     }
+<<<<<<< HEAD
 
     @Override
     public void onStop() {
         super.onStop();
         KOBData.myRefList.removeEventListener(valueEventListenerKOB);
     }
+=======
+>>>>>>> d2b3ea0 (Initial commit)
 }
 

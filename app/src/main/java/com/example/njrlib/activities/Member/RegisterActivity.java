@@ -44,7 +44,12 @@ public class RegisterActivity extends AppCompatActivity {
     ActivitySwitcher activitySwitcher;
     Tool tool;
     //
+<<<<<<< HEAD
     String name,dob,phoneNumber;
+=======
+    String name,phoneNumber;
+    long dob;
+>>>>>>> d2b3ea0 (Initial commit)
     byte[] byteImage;
     Member mem=new Member();
     @Override
@@ -66,7 +71,11 @@ public class RegisterActivity extends AppCompatActivity {
             bundle=intent.getExtras();
             if (bundle!=null){
                 name=bundle.getString("name");
+<<<<<<< HEAD
                 dob=bundle.getString("dob");
+=======
+                dob=bundle.getLong("dob");
+>>>>>>> d2b3ea0 (Initial commit)
                 phoneNumber=bundle.getString("phoneNumbers");
                 byteImage=bundle.getByteArray("arrByte");
 
@@ -147,14 +156,22 @@ public class RegisterActivity extends AppCompatActivity {
                             //thực hiện đưa thông tin lên firestore
                             mem.setId(mAuth.getUid());
                             mem.setName(name);
+<<<<<<< HEAD
                             mem.setDob(tool.switchStringToDate(dob));
+=======
+                            mem.setDob(dob);
+>>>>>>> d2b3ea0 (Initial commit)
                             mem.setMoney(0);
                             mem.setPhoneNumber(phoneNumber);
                             // Create a new user with a first and last name
                             Map<String, Object> member = new HashMap<>();
                             member.put("id", mem.getId());
                             member.put("name", mem.getName());
+<<<<<<< HEAD
                             member.put("dob",tool.switchDateToString(mem.getDob()));
+=======
+                            member.put("dob",mem.getDob());
+>>>>>>> d2b3ea0 (Initial commit)
                             member.put("phoneNumber", mem.getPhoneNumber());
                             member.put("money", mem.getMoney());
                             member.put("linkAvatar",uri.toString());

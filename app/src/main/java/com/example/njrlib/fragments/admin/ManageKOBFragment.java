@@ -132,7 +132,10 @@ public class ManageKOBFragment extends Fragment {
                 }else{
                     String id=dialogBinding.edtIDKOB.getText().toString();
                     String name=dialogBinding.edtNameKOB.getText().toString();
+<<<<<<< HEAD
 
+=======
+>>>>>>> d2b3ea0 (Initial commit)
                     //thêm item
                     kobData.setAdd(new KindOfBook(id,name));
                 }

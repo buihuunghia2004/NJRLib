@@ -11,7 +11,10 @@ import android.view.ViewGroup;
 
 import com.example.njrlib.R;
 import com.example.njrlib.databinding.FragmentChooseBookBinding;
+<<<<<<< HEAD
 import com.example.njrlib.databinding.FragmentMemberManageBinding;
+=======
+>>>>>>> d2b3ea0 (Initial commit)
 import com.example.njrlib.fragments.Member.FagmentChooseBook.CBListFragment;
 import com.example.njrlib.fragments.Member.FagmentChooseBook.CBTop10Fragment;
 import com.google.android.material.tabs.TabLayout;
@@ -32,7 +35,10 @@ public class ChooseBookFragment extends Fragment {
                 .add(R.id.frame_fragment_choosebook,cbListFragment)
                 .commit();
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d2b3ea0 (Initial commit)
         binding.tlyFragmentChooseBook.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {

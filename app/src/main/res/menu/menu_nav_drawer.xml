@@ -7,6 +7,13 @@
             <menu>
                 <group>
                     <item
+<<<<<<< HEAD
+=======
+                        android:id="@+id/itemLibrarianMana"
+                        android:icon="@drawable/baseline_manage_accounts_24"
+                        android:title="Quản lý thủ thư" />
+                    <item
+>>>>>>> d2b3ea0 (Initial commit)
                         android:id="@+id/itemMemberMana"
                         android:icon="@drawable/member_manage"
                         android:title="Quản lý thành viên" />

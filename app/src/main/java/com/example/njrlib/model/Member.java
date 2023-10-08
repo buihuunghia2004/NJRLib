@@ -6,7 +6,11 @@ import java.util.Date;
 public class Member implements Serializable {
     private String id;
     private String name;
+<<<<<<< HEAD
     private Date dob;
+=======
+    private long dob;
+>>>>>>> d2b3ea0 (Initial commit)
     private String phoneNumber;
     private int money;
     private String linkAvatar;
@@ -14,7 +18,11 @@ public class Member implements Serializable {
     public Member() {
 
     }
+<<<<<<< HEAD
     public Member(String id, String name, Date dob,String phoneNumber,int money, String linkAvatar) {
+=======
+    public Member(String id, String name, long dob,String phoneNumber,int money, String linkAvatar) {
+>>>>>>> d2b3ea0 (Initial commit)
         this.id = id;
         this.name = name;
         this.dob = dob;
@@ -38,10 +46,17 @@ public class Member implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
+<<<<<<< HEAD
     public Date getDob() {
         return dob;
     }
     public void setDob(Date dob) {
+=======
+    public long getDob() {
+        return dob;
+    }
+    public void setDob(long dob) {
+>>>>>>> d2b3ea0 (Initial commit)
         this.dob = dob;
     }
     public String getPhoneNumber() {

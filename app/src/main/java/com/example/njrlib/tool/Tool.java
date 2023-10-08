@@ -47,6 +47,7 @@ public class Tool {
         }
         return bitmap;
     }
+<<<<<<< HEAD
     public String switchDateToString(Date yourDate){
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
         String date;
@@ -63,4 +64,6 @@ public class Tool {
         }
         return date;
     }
+=======
+>>>>>>> d2b3ea0 (Initial commit)
 }

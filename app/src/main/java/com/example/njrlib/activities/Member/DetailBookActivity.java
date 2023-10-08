@@ -28,6 +28,10 @@ public class DetailBookActivity extends AppCompatActivity {
     DataFireBase.CartsData cartsData;
     FirebaseAuth mAuth;
     ActivityDetailBookBinding binding;
+<<<<<<< HEAD
+=======
+    ValueEventListener valueEventListener;
+>>>>>>> d2b3ea0 (Initial commit)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +64,7 @@ public class DetailBookActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+<<<<<<< HEAD
                 ValueEventListener valueEventListener=new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -81,6 +86,22 @@ public class DetailBookActivity extends AppCompatActivity {
                     }
                 };
                 cartsData.myRefList.addValueEventListener(valueEventListener);
+=======
+                valueEventListener=new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        cartsData.myRefList.child(mAuth.getUid()).child(book.getId()).setValue(1);
+                        Toast.makeText(DetailBookActivity.this, "Đã thêm sách vào giỏ hàng", Toast.LENGTH_SHORT).show();
+                        //Bổ sung chức năng kiểm tra sách đã có trong giỏ hàng hay chưa
+
+                        cartsData.myRefList.child(mAuth.getUid()).removeEventListener(this);
+                    }
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+                    }
+                };
+                cartsData.myRefList.child(mAuth.getUid()).addValueEventListener(valueEventListener);
+>>>>>>> d2b3ea0 (Initial commit)
             }
         });
         //thuê sách
@@ -96,4 +117,15 @@ public class DetailBookActivity extends AppCompatActivity {
             }
         });
     }
+<<<<<<< HEAD
+=======
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (valueEventListener!=null){
+            cartsData.myRefList.child(mAuth.getUid()).addValueEventListener(valueEventListener);
+        }
+    }
+>>>>>>> d2b3ea0 (Initial commit)
 }

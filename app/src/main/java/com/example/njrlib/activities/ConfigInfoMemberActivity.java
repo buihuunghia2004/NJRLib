@@ -14,6 +14,10 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.text.TextUtils;
+<<<<<<< HEAD
+=======
+import android.util.Log;
+>>>>>>> d2b3ea0 (Initial commit)
 import android.util.Patterns;
 import android.view.View;
 import android.widget.DatePicker;
@@ -33,6 +37,10 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.storage.UploadTask;
 
+<<<<<<< HEAD
+=======
+import java.time.LocalDate;
+>>>>>>> d2b3ea0 (Initial commit)
 import java.util.Calendar;
 
 public class ConfigInfoMemberActivity extends AppCompatActivity {
@@ -41,11 +49,18 @@ public class ConfigInfoMemberActivity extends AppCompatActivity {
     DataFireBase dataFireBase;
     ActivityConfigInfoMemberBinding binding;
     private ActivityResultLauncher<Intent> imagePickerLauncher,upLoadInfoLaucher;
+<<<<<<< HEAD
 
+=======
+>>>>>>> d2b3ea0 (Initial commit)
     //Tool
     ActivitySwitcher activitySwitcher;
     Tool tool;
 
+<<<<<<< HEAD
+=======
+    long epochDay;
+>>>>>>> d2b3ea0 (Initial commit)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -97,7 +112,11 @@ public class ConfigInfoMemberActivity extends AppCompatActivity {
                                                     String phoneNumbers=binding.edtPhoneNumbers.getText().toString();
                                                     //up info lên realtime
                                                     if (!TextUtils.isEmpty(name) && !TextUtils.isEmpty(dob) && Patterns.PHONE.matcher(phoneNumbers).matches()){
+<<<<<<< HEAD
                                                         Member member=new Member(id,name,tool.switchStringToDate(dob),phoneNumbers,0,linkAvatar);
+=======
+                                                        Member member=new Member(id,name,epochDay,phoneNumbers,0,linkAvatar);
+>>>>>>> d2b3ea0 (Initial commit)
                                                         DataFireBase.MembersData membersData=dataFireBase.new MembersData();
                                                         membersData.setAdd(member);
                                                         //
@@ -159,6 +178,11 @@ public class ConfigInfoMemberActivity extends AppCompatActivity {
                                           int monthOfYear, int dayOfMonth) {
                         // Xử lý khi ngày được chọn
                         String date=dayOfMonth+"/"+monthOfYear+"/"+year;
+<<<<<<< HEAD
+=======
+                        epochDay = LocalDate.of(year, monthOfYear, dayOfMonth).toEpochDay();
+                        Log.d("DDD2", "onClick: "+epochDay);
+>>>>>>> d2b3ea0 (Initial commit)
                         binding.edtDOB.setText(date);
                     }
                 }, mYear, mMonth, mDay);
